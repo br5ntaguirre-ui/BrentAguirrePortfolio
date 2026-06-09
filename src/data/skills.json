@@ -1,0 +1,26 @@
+{
+  "technical": [
+    "Vue.js",
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "HTML & CSS",
+    "Tailwind CSS",
+    "Node.js",
+    "MongoDB",
+    "PostgreSQL",
+    "Git & GitHub",
+    "REST APIs"
+  ],
+  "creative": [
+    "Content Strategy",
+    "Visual Design",
+    "Video Editing",
+    "Social Media Management",
+    "Copywriting",
+    "Brand Development",
+    "Campaign Planning",
+    "Audience Engagement"
+  ]
+}

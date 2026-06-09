@@ -1,0 +1,32 @@
+{
+  "links": {
+    "instagram": "https://instagram.com/yourusername",
+    "tiktok": "https://tiktok.com/@yourusername",
+    "twitter": "https://twitter.com/yourusername",
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername"
+  },
+  "curated": [
+    {
+      "platform": "instagram",
+      "title": "Society Campaign - [Name]",
+      "description": "Successful campaign for [society name] that generated X impressions",
+      "image": "https://images.unsplash.com/photo-1599050991474-8d9058a89716?w=300&h=300&fit=crop",
+      "type": "society"
+    },
+    {
+      "platform": "tiktok",
+      "title": "Viral Post Title",
+      "description": "Content that resonated with audience - X views",
+      "image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=300&h=300&fit=crop",
+      "type": "personal"
+    },
+    {
+      "platform": "instagram",
+      "title": "Personal Project",
+      "description": "Showcasing personal creativity and style",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=300&h=300&fit=crop",
+      "type": "personal"
+    }
+  ]
+}

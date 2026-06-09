@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "role": "Engineering Student",
+    "company": "[Your University Name]",
+    "period": "2022 - Present",
+    "description": "Pursuing degree in [Engineering Discipline]. Passionate about [your focus areas]."
+  },
+  {
+    "id": 2,
+    "role": "Social Media Manager",
+    "company": "[Student Society Name]",
+    "period": "2023 - Present",
+    "description": "Managing digital presence and campaigns for the society. Growing engagement and building community."
+  },
+  {
+    "id": 3,
+    "role": "Content Creator",
+    "company": "Personal Projects",
+    "period": "2022 - Present",
+    "description": "Creating engaging content across multiple platforms. Built following of X thousand across platforms."
+  }
+]
