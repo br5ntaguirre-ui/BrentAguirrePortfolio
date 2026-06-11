@@ -2,31 +2,19 @@
   {
     "id": 1,
     "title": "Your Project Name",
-    "description": "Brief description of what this project does",
-    "fullDescription": "A more detailed description if needed",
+    "description": "Brief description of your personal project",
     "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
-    "tags": ["Tag1", "Tag2", "Tag3"],
-    "link": "https://project-link.com",
-    "github": "https://github.com/yourusername/project-name"
+    "tags": ["Tag1", "Tag2"],
+    "link": "#",
+    "github": "https://github.com"
   },
   {
     "id": 2,
     "title": "Another Project",
-    "description": "Description of your second project",
-    "fullDescription": "More details about the project here",
+    "description": "Another personal engineering project",
     "image": "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=500&h=300&fit=crop",
-    "tags": ["React", "TypeScript", "Tailwind"],
-    "link": "https://project-link.com",
-    "github": "https://github.com/yourusername/project-name"
-  },
-  {
-    "id": 3,
-    "title": "Third Project",
-    "description": "Description of your third project",
-    "fullDescription": "More details about this project",
-    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
-    "tags": ["Vue", "Node.js", "MongoDB"],
-    "link": "https://project-link.com",
-    "github": "https://github.com/yourusername/project-name"
+    "tags": ["React", "TypeScript"],
+    "link": "#",
+    "github": "https://github.com"
   }
 ]

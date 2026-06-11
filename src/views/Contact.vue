@@ -1,93 +1,64 @@
 <template>
-  <div class="min-h-screen bg-cyber-dark py-20 px-4 sm:px-6 lg:px-8">
+  <div class="min-h-screen bg-cream py-20 px-4">
     <div class="max-w-2xl mx-auto">
-      <!-- Header -->
-      <div class="mb-12 text-center animate-slide-up">
-        <h1 class="text-5xl sm:text-6xl font-display font-bold mb-4">
-          <span class="gradient-text">Let's Connect</span>
-        </h1>
-        <p class="text-xl text-cyber-silver/80">Have a project or idea? I'd love to hear from you.</p>
-      </div>
+      <!-- Header Section -->
+      <section class="relative overflow-hidden mb-16">
+        <!-- Geometric background -->
+        <div class="absolute -top-20 -right-20 w-80 h-80 poly-amber opacity-5 z-0"></div>
+        <div class="absolute -bottom-20 -left-20 w-60 h-60 poly-steel opacity-10 z-0 rotate-2"></div>
 
-      <!-- Contact Options -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-        <a href="mailto:contact@example.com" class="glass rounded-xl p-8 hover:shadow-glow-purple transition-all text-center group">
-          <div class="text-4xl mb-4">📧</div>
-          <h3 class="text-xl font-bold text-cyber-silver group-hover:text-cyber-purple transition mb-2">Email</h3>
-          <p class="text-cyber-silver/60 text-sm">contact@example.com</p>
-        </a>
+        <div class="relative z-10">
+          <div class="eyebrow text-amber mb-4">• 002 — GET IN TOUCH</div>
+          <h1 class="display-lg text-black mb-6 transform rotate-1">LET'S TALK</h1>
+          
+          <div class="dashed-box border-amber w-fit mb-8">
+            <p class="text-black text-sm leading-relaxed max-w-lg">
+              Have a question, idea, or just want to say hello? Fill out the form below and I'll get back to you as soon as possible.
+            </p>
+          </div>
+        </div>
 
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="glass rounded-xl p-8 hover:shadow-glow-purple transition-all text-center group">
-          <div class="text-4xl mb-4">🔗</div>
-          <h3 class="text-xl font-bold text-cyber-silver group-hover:text-cyber-purple transition mb-2">LinkedIn</h3>
-          <p class="text-cyber-silver/60 text-sm">Connect with me</p>
-        </a>
+        <div class="dot-matrix"></div>
+      </section>
 
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="glass rounded-xl p-8 hover:shadow-glow-purple transition-all text-center group">
-          <div class="text-4xl mb-4">💻</div>
-          <h3 class="text-xl font-bold text-cyber-silver group-hover:text-cyber-purple transition mb-2">GitHub</h3>
-          <p class="text-cyber-silver/60 text-sm">Check out my code</p>
-        </a>
-
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="glass rounded-xl p-8 hover:shadow-glow-purple transition-all text-center group">
-          <div class="text-4xl mb-4">📱</div>
-          <h3 class="text-xl font-bold text-cyber-silver group-hover:text-cyber-purple transition mb-2">Instagram</h3>
-          <p class="text-cyber-silver/60 text-sm">Follow my journey</p>
-        </a>
-      </div>
-
-      <!-- Quick Message Form -->
-      <div class="glass rounded-xl p-8 md:p-12 animate-slide-up" style="animation-delay: 0.1s;">
-        <h2 class="text-2xl font-bold text-cyber-silver mb-6">Send a Quick Message</h2>
-        <form @submit.prevent="handleSubmit" class="space-y-6">
-          <!-- Name -->
-          <div>
-            <label for="name" class="block text-cyber-silver font-semibold mb-2">Name</label>
+      <!-- Contact Form -->
+      <form @submit.prevent="handleSubmit" class="relative z-10">
+        <div class="glass-panel p-8 md:p-12">
+          <!-- Name Field -->
+          <div class="mb-8">
+            <label for="name" class="block eyebrow text-amber mb-3">NAME</label>
             <input
               id="name"
               v-model="form.name"
               type="text"
-              placeholder="Your name"
-              class="w-full px-4 py-3 bg-cyber-dark/50 border border-cyber-silver/20 rounded-lg text-cyber-silver placeholder-cyber-silver/40 focus:outline-none focus:border-cyber-purple focus:ring-1 focus:ring-cyber-purple transition"
+              placeholder="Your full name"
+              class="w-full px-4 py-3 bg-cream border-2 border-black text-black placeholder-black/40 focus:outline-none focus:border-amber transition text-sm"
               required
             />
           </div>
 
-          <!-- Email -->
-          <div>
-            <label for="email" class="block text-cyber-silver font-semibold mb-2">Email</label>
+          <!-- Email Field -->
+          <div class="mb-8">
+            <label for="email" class="block eyebrow text-amber mb-3">EMAIL</label>
             <input
               id="email"
               v-model="form.email"
               type="email"
               placeholder="your@email.com"
-              class="w-full px-4 py-3 bg-cyber-dark/50 border border-cyber-silver/20 rounded-lg text-cyber-silver placeholder-cyber-silver/40 focus:outline-none focus:border-cyber-purple focus:ring-1 focus:ring-cyber-purple transition"
+              class="w-full px-4 py-3 bg-cream border-2 border-black text-black placeholder-black/40 focus:outline-none focus:border-amber transition text-sm"
               required
             />
           </div>
 
-          <!-- Subject -->
-          <div>
-            <label for="subject" class="block text-cyber-silver font-semibold mb-2">Subject</label>
-            <input
-              id="subject"
-              v-model="form.subject"
-              type="text"
-              placeholder="What's this about?"
-              class="w-full px-4 py-3 bg-cyber-dark/50 border border-cyber-silver/20 rounded-lg text-cyber-silver placeholder-cyber-silver/40 focus:outline-none focus:border-cyber-purple focus:ring-1 focus:ring-cyber-purple transition"
-              required
-            />
-          </div>
-
-          <!-- Message -->
-          <div>
-            <label for="message" class="block text-cyber-silver font-semibold mb-2">Message</label>
+          <!-- Message Field -->
+          <div class="mb-8">
+            <label for="message" class="block eyebrow text-amber mb-3">MESSAGE</label>
             <textarea
               id="message"
               v-model="form.message"
-              placeholder="Tell me what's on your mind..."
-              rows="5"
-              class="w-full px-4 py-3 bg-cyber-dark/50 border border-cyber-silver/20 rounded-lg text-cyber-silver placeholder-cyber-silver/40 focus:outline-none focus:border-cyber-purple focus:ring-1 focus:ring-cyber-purple transition resize-none"
+              placeholder="What's on your mind? (No character limit, but keep it real)"
+              rows="6"
+              class="w-full px-4 py-3 bg-cream border-2 border-black text-black placeholder-black/40 focus:outline-none focus:border-amber transition text-sm resize-none"
               required
             ></textarea>
           </div>
@@ -95,15 +66,29 @@
           <!-- Submit Button -->
           <button
             type="submit"
-            class="w-full px-6 py-3 bg-gradient-cyber rounded-lg text-white font-semibold hover:shadow-glow-purple transition-all duration-200"
+            :disabled="isSubmitting"
+            class="section-tab w-full bg-amber text-black border-amber hover:bg-amber-dark disabled:opacity-50"
           >
-            {{ submitted ? '✓ Message Sent!' : 'Send Message →' }}
+            {{ isSubmitting ? 'SENDING...' : submitted ? '✓ SENT!' : 'SEND MESSAGE →' }}
           </button>
-        </form>
 
-        <p class="text-cyber-silver/60 text-sm mt-6 text-center">
-          I typically respond within 24 hours. Looking forward to hearing from you!
+          <!-- Success Message -->
+          <p v-if="submitted" class="text-sm text-amber mt-6 text-center">
+            Thanks for reaching out! I'll get back to you soon.
+          </p>
+        </div>
+      </form>
+
+      <!-- Footer Note -->
+      <div class="mt-12 text-center">
+        <p class="text-xs text-black/50 mb-4">
+          No automatic replies here. Just genuine human responses.
         </p>
+        <div class="flex justify-center gap-4">
+          <router-link to="/" class="text-amber hover:text-amber-dark transition text-sm font-bold">
+            ← Back to Home
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -112,23 +97,33 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const form = ref({
+interface ContactForm {
+  name: string
+  email: string
+  message: string
+}
+
+const form = ref<ContactForm>({
   name: '',
   email: '',
-  subject: '',
   message: ''
 })
 
 const submitted = ref(false)
+const isSubmitting = ref(false)
 
-const handleSubmit = () => {
-  // For now, just show success message
-  // In a real app, you'd send this to a backend or service
-  submitted.value = true
+const handleSubmit = async () => {
+  isSubmitting.value = true
   
-  // Reset after 3 seconds
+  // Simulate sending (in production, this would call a backend API)
+  await new Promise(resolve => setTimeout(resolve, 1000))
+  
+  submitted.value = true
+  isSubmitting.value = false
+  
+  // Reset form after 3 seconds
   setTimeout(() => {
-    form.value = { name: '', email: '', subject: '', message: '' }
+    form.value = { name: '', email: '', message: '' }
     submitted.value = false
   }, 3000)
 }

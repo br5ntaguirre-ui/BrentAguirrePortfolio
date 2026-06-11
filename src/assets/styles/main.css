@@ -6,7 +6,7 @@
 @import './theme.css';
 
 body {
-  @apply bg-cyber-dark text-cyber-silver;
+  @apply bg-cream text-black;
   font-family: 'Inter', system-ui, sans-serif;
 }
 
@@ -20,14 +20,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1f3a;
+  background: #F0EDE8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #a020f0;
-  border-radius: 5px;
+  background: #E8A020;
+  border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff10f0;
+  background: #C87800;
 }

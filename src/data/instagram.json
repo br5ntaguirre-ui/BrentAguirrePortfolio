@@ -1,0 +1,24 @@
+{
+  "handle": "@1030kbt",
+  "bio": "Your Instagram bio goes here - personal insights, creativity, and daily life",
+  "highlights": [
+    {
+      "id": 1,
+      "title": "Highlight 1",
+      "description": "Your favorite Instagram moment",
+      "image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=300&h=300&fit=crop"
+    },
+    {
+      "id": 2,
+      "title": "Highlight 2",
+      "description": "Another favorite post",
+      "image": "https://images.unsplash.com/photo-1599050991474-8d9058a89716?w=300&h=300&fit=crop"
+    },
+    {
+      "id": 3,
+      "title": "Highlight 3",
+      "description": "More of your content",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=300&h=300&fit=crop"
+    }
+  ]
+}
